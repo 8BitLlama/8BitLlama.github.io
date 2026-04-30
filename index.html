@@ -25,7 +25,15 @@
     <div id="loading-screen">
       <img src="loading.png" alt="Loading...">
     </div>
-    <!-- Load the game using player.js -->
+
     <script src="player.js?g=Imperial_Docks.love"></script>
+    
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          document.getElementById('loading-screen').style.display = 'none';
+        }, 3000);
+      });
+    </script>
   </body>
 </html>
